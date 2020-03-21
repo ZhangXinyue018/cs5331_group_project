@@ -32,6 +32,6 @@ func main() {
 			wg.Done()
 		}()
 	}
-	wg.Done()
+	wg.Wait()
 	fmt.Println("done")
 }
