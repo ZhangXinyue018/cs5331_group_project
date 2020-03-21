@@ -12,13 +12,13 @@ import (
 var wg sync.WaitGroup
 
 func main() {
-	requestUrl := "http://10.0.2.6/final/index.php"
+	requestUrl := "http://10.0.2.6/Homework3/final/index.php"
 	concurrentRequester := 20
 	for i := 0; i < concurrentRequester; i++ {
 		wg.Add(1)
 		go func() {
 			formValue := url.Values{
-				"email":    {"aaaaaaaaaaaa"},
+				"email":    {"aaaaaaaaaaaaaaaaaaaaax"},
 				"password": {"aaaaaaaaa"},
 			}
 			response, err := http.PostForm(requestUrl, formValue)
