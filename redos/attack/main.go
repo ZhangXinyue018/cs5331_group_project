@@ -17,19 +17,21 @@ func main() {
 	for i := 0; i < concurrentRequester; i++ {
 		wg.Add(1)
 		go func() {
-			formValue := url.Values{
-				"email":    {"aaaaaaaaaaaaaaaaaaaaax"},
-				"password": {"aaaaaaaaa"},
+			defer wg.Done()
+			for {
+				formValue := url.Values{
+					"email":    {"aaaaaaaaaaaaaaaaaaaaaaaax"},
+					"password": {"aaaaaaaaa"},
+				}
+				response, err := http.PostForm(requestUrl, formValue)
+				if err != nil {
+					log.Println(err.Error())
+				}else{
+					defer response.Body.Close()
+					body, _ := ioutil.ReadAll(response.Body)
+					fmt.Println(string(body))
+				}
 			}
-			response, err := http.PostForm(requestUrl, formValue)
-			if err != nil {
-				log.Println(err.Error())
-			}else{
-				defer response.Body.Close()
-				body, _ := ioutil.ReadAll(response.Body)
-				fmt.Println(string(body))
-			}
-			wg.Done()
 		}()
 	}
 	wg.Wait()
