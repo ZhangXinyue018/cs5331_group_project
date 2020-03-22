@@ -12,7 +12,8 @@ import (
 var wg sync.WaitGroup
 
 func main() {
-	requestUrl := "http://10.0.2.6/Homework3/final/index.php"
+	// requestUrl := "http://10.0.2.6/Homework3/final/index.php"
+	requestUrl := "http://10.0.2.131/Homework3/redos/index.php"
 	concurrentRequester := 20
 	for i := 0; i < concurrentRequester; i++ {
 		wg.Add(1)
