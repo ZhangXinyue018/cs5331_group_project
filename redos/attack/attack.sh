@@ -1,10 +1,10 @@
-#!/bin/bash
+#! /bin/bash
 
 task(){
-   curl -s "http://www.wsb.com/Homework3/final/index.php?email=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!&password=test" >/dev/null
+    curl -s "http://192.168.0.117/Homework3/final/index.php?email=aaaaaaaaaaaaaaa!&password=test" > /dev/null
 }
 
-N=4
+N=1000
 
 (
 for i in {0..100}; do 
