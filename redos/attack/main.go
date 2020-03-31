@@ -35,7 +35,7 @@ func (reporter *Reporter) IncrFail() {
 func (reporter *Reporter) Get() {
 	reporter.mtx.RLock()
 	defer reporter.mtx.RUnlock()
-	fmt.Printf("Get Success: %d, Failure: %d at %v", reporter.succCount, reporter.failCount, time.Now())
+	fmt.Printf("Get Success: %d, Failure: %d at %v\n", reporter.succCount, reporter.failCount, time.Now())
 }
 
 func main() {
