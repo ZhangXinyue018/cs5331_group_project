@@ -29,7 +29,7 @@ We are able to reproduce the problem in our environment.
 
 ### Solution
 1. Restrict the length of string, and check the length before checking the regex
-2. Avoid using <font color="red">/(`something`+)+$/<font> in regex checking
+2. Avoid using `-/(something+)+$/` in regex checking
 
 ### Demo
 [Attack Demo 1] Browser demo of `evil regex` increases response time<br>
