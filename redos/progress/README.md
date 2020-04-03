@@ -37,6 +37,8 @@ We are able to reproduce the problem in our environment.
 [Solution Demo 1] Attack demo when CPU is not as high as Vulnerable<br>
 
 ### Result
-[Attack Demo 1] TBD<br>
-[Attack Demo 2] TBD<br>
+[Web Page]<br>![web page](./results/web_page.jpg)
+[Normal Request]<br>![normal request](./results/normal_request.jpg)
+[Attack Demo 1]<br>![attack demo 1](./results/attack_demo_1.jpg)
+[Attack Demo 2]<br>![attack demo 2](./results/attack_demo_2.png)
 [Solution Demo 1] TBD<br>
