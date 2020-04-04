@@ -1,15 +1,24 @@
-#! /bin/bash
+#!/bin/bash
 
 task(){
-    curl -s "http://192.168.0.117/Homework3/final/index.php?email=aaaaaaaaaaaaaaa!&password=test" > /dev/null
+    curl -s "http://192.168.0.120/Homework3/final/index.php?email=aaaaaaaaaaaaaaa!&password=test" > /dev/null
 }
 
+# N-process batches, every batch has N concurrent processes
 N=1000
 
 (
-for i in {0..100}; do 
+# for loop
+for (( c=1; c<=10000 ; c++))
+	
+	do
+
+# wait for N concurrent process to complete
    ((i=i%N)); ((i++==0)) && wait
-   task "$i" & 
+   
+# execute the task concurrently
+   task &
+
 done
 )
 
