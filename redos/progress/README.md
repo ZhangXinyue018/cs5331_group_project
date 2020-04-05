@@ -18,8 +18,8 @@ Analyze and understand the logic of ReDoS. Reproduce the attack and base on the 
 
 
 ### Reference
-1. [Understanding ReDoS Attack. (n.d.) Retrieved March 22, 2020](https://www.geeksforgeeks.org/understanding-redos-attack/)
-2. [Regular expression Denial of Service - ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS/)
+1. [Understanding ReDoS Attack. (n.d.) Retrieved March 22, 2020](https://www.geeksforgeeks.org/understanding-redos-attack)
+2. [Regular expression Denial of Service - ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS)
 
 ## Progress Update
 
