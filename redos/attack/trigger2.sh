@@ -6,7 +6,7 @@ echo Hello, which script you want to trigger?
 read script_name
 
 
-if [ "$script_name" == "attack" ]
+if [ "$script_name" == "a" ]
 
 then
 	
@@ -14,8 +14,9 @@ then
 	echo triggering attack script
 
 	while true; do
-		./attack.sh 
+		./attack2.sh 
 		echo `date`
+		echo ""
 	done
 
 else
@@ -24,8 +25,9 @@ else
 	echo triggering solution script
 
 	while true; do
-		./solution.sh 
+		./solution2.sh 
 		echo `date`
+		echo ""
 	done
 
 fi
