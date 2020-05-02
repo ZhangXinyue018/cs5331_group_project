@@ -16,7 +16,7 @@
 				$email = $_GET['email'];
 				$password = $_GET['password'];
 				if((!empty($email)) && (!empty($password))){
-				    if(strlen($email) > 25){
+				    if(strlen($email) > 12){
 				        echo "<p>Your input too long!!!</p>"
 				    }else{
 				        if(preg_match($p, $email)){
