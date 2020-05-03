@@ -1,8 +1,10 @@
 #!/bin/bash
 SECONDS=0
 
+server_address=192.168.154.132
+
 task(){
-    curl -s "http://192.168.154.132/redos/index.php?email=aaaaaaaaaaaaaaaaaaaa!&password=test" > /dev/null
+    curl -s "http://$server_address/redos/index.php?email=aaaaaaaaaaaaaaaaaaaa!&password=test" > /dev/null
 }
 
 # N-process batches, every batch has N concurrent processes
