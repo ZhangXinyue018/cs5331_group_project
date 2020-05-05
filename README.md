@@ -12,5 +12,6 @@ Welcome to CS5331 Group 18 project
 - [Vulnerable Web Code](./redos/vulnerable/README.md)
 - [Attack Scripts](./redos/attack/README.md)
 - [Progress Report](./redos/progress/README.md)
+- [Final Report](./redos/finalReport/README.md)
 
 Noted: All the contents are `group discussion results`. Equally efforts are distributed to every member.

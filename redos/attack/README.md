@@ -1,7 +1,7 @@
 # Attack Scripts
 
 ## Bash Version
-[redirect](./attack.sh)
+[redirect](./attack2.sh)
 
 ## Go Version
 [redirect](./go/main.go)
